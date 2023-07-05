@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "title": "db2: Post 1",
+      "description": "Description post 1",
+      "category": "code",
+      "id": 1
+    },
+    {
+      "title": "db2: Post 2",
+      "description": "Description post 2",
+      "category": "code",
+      "id": 2
+    },
+    {
+      "title": "db2: Post 3",
+      "description": "Description post 3",
+      "category": "cards",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "text": "Hello"
+    }
+  ]
+}
