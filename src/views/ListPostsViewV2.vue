@@ -1,18 +1,18 @@
 <template>
-  <ListPosts :server="defaultServer" />
+  <ListPosts :server="secondServer" />
 </template>
 
 <script>
 import ListPosts from "@/components/ListPosts.vue";
-import { defaultServer } from "@/api/config.js";
+import { secondServer } from "@/api/config.js";
 
 export default {
   data: function () {
     return {
-      defaultServer,
+      secondServer,
     };
   },
-  name: "ListPostsView",
+  name: "ListPostsViewV2",
   components: {
     ListPosts,
   },
