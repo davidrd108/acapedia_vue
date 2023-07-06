@@ -33,13 +33,13 @@
     },
     {
       "id": 2,
-      "postId": 2,
-      "text": "Good Bye"
+      "postId": 1,
+      "text": "Hello 2"
     },
     {
       "id": 3,
       "postId": 2,
-      "text": "Wait!"
+      "text": "Good Bye"
     }
   ]
 }

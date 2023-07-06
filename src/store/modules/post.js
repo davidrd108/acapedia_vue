@@ -33,11 +33,21 @@ export default {
     updatePost(_ctx, { postId, updateParams }) {
       updatePost(postId, updateParams);
     },
-    async listPosts({ commit }) {
-      const posts = await listPosts();
+    async listPosts({ commit }, filters) {
+      let posts = await listPosts(
+        filters && filters.page ? filters.page : null,
+        filters && filters.search ? filters.search : null,
+        filters && filters.category ? filters.category : null
+      );
+
+      posts = posts.map((post) => {
+        post.commentsCount = post.comments ? post.comments.length : 0;
+        return post;
+      });
 
       commit("setPosts", posts);
     },
+
     async showPost({ commit }, postId) {
       const currentPost = await showPost(postId);
 
